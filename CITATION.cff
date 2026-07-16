@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this evidence record, please cite it as below."
+type: dataset
+title: "ChatGPT Library Forensics"
+version: 0.1.0
+date-released: 2026-07-17
+license: CC-BY-2.0
+authors:
+  - family-names: Gregovic
+    given-names: Andrew
+repository-code: "https://github.com/andrewgregovic/chatgpt-library-forensics-public"
+url: "https://github.com/andrewgregovic/chatgpt-library-forensics-public"
+abstract: "A curated public evidence record concerning scoped observations of generated-ZIP downstream reuse, representation-state divergence, and related ChatGPT file workflows."

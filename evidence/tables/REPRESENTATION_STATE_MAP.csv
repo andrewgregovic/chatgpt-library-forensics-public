@@ -1,0 +1,9 @@
+state,positive_observation,negative_or_non-equivalent_observation,claim_ceiling
+DISPLAYED_FILENAME,"A name appears in an interface or record.","A shared displayed name need not mean a shared object or bytes.","Filename equality is not object identity."
+LIBRARY_ROW,"An artifact is visible in Library.","Visibility did not guarantee downstream reuse in the recorded ZIP cases.","Library presence is not picker eligibility or materialisation."
+PICKER_ELIGIBILITY,"A file is selectable in a picker.","Some generated ZIP records were not picker-resolvable while uploaded controls reportedly were.","Picker failure is route-specific."
+SEMANTIC_SEARCH,"Search returns a row reference or related result.","A result need not be the exact target or independently usable object.","Search success is not exact resolution."
+PARSED_REPRESENTATION,"A tool exposes text metadata or a derivative.","Parsed content need not be the original bytes.","Parsing is not original-byte proof."
+ATTACHED_OBJECT,"An object is attached to a request.","Attachment does not guarantee runtime-local success or byte identity.","Attachment is not materialisation."
+CURRENT_RETRIEVABLE_BYTES,"Current local bytes can be opened and hashed.","Local availability does not prove historical origin or Library object identity.","Current bytes are not route provenance."
+RUNTIME_LOCAL_MATERIALISATION,"A runtime path can be used for a task.","Runtime success does not prove durable Library persistence or later reuse.","Runtime state is not durable enrollment."

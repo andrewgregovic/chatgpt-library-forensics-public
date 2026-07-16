@@ -1,0 +1,11 @@
+contradiction_id,type,publication_safe_tension,resolution_or_ceiling
+CON-01,ROUTE_VERSUS_BYTE_ABSENCE,"Library visibility plus later route failure does not prove bytes are absent or non-materialisable through every route.","State only tested-route divergence."
+CON-02,SAMPLE_VERSUS_GENERALISATION,"Eleven recorded targets and a 31-row retrospective inventory do not supply a population denominator or independent conditions.","Do not publish a failure rate or prevalence."
+CON-03,ORIGIN_CONFOUNDED,"Generated versus uploaded differences can be confounded by name session suffix upload and lineage history.","Treat origin/object-state association as descriptive; do not name a component."
+CON-04,CONTROL_PROVENANCE,"The controlled ZIP current bytes match a prior recorded uploaded hash, but separately preserved uploaded bytes and origin metadata are absent.","Publish current-byte result with first-party provenance ceiling."
+CON-05,RENAME_SEQUENCE_VERSUS_CAUSE,"Rename-and-reupload succeeded as a sequence but did not prove namespace eviction or repair of the original object.","Describe an operational replacement only."
+CON-06,SEARCH_VERSUS_IDENTITY,"A search row or reference does not establish exact target identity.","Do not equate semantic retrieval with object resolution."
+CON-07,PARSER_PATTERN_VERSUS_MECHANISM,"Rendered-versus-extracted PDF differences do not identify a parser font map or encoding cause.","Keep the artifact class descriptive."
+CON-08,SCREENSHOT_UI_VERSUS_ACTION,"A Gmail reconnect surface does not establish Gmail search read draft send or invocation.","Do not state a connector action."
+CON-09,NARRATION_VERSUS_EXECUTION,"Progress wording can outrun later disclosed state without revealing hidden tool state or background work.","Treat narration as a claim requiring execution receipts."
+CON-10,STATUS_INCIDENT_VERSUS_COMMON_CAUSE,"Discrete public file incidents do not establish one cause for all anomalies.","No common-cause conclusion."
