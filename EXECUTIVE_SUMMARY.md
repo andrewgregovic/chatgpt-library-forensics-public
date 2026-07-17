@@ -15,7 +15,7 @@ The correct scope is deliberately narrow. The record supports a repeated pattern
 
 ## Article-evidence gate
 
-The companion [article evidence gate](ARTICLE_EVIDENCE_GATE_A_FILENAME_IS_NOT_A_FILE_v0.5.md) is intentionally stricter than this summary. It records five blocked article-critical referents, including the proposed early-morning image and Library timeline exhibits. Those events are not publicly supported until an original direct transcript or screenshot is recovered; no lead text has been converted into a transcript or image.
+The companion [article evidence gate](ARTICLE_EVIDENCE_GATE_A_FILENAME_IS_NOT_A_FILE_v0.5.md) is intentionally stricter than this summary. It is now ready for promotion review with explicit provenance ceilings: the early-morning image and Library entries are operator-supplied recovered transcript extracts, the false Chapter 13 receipt is a deterministic PDF-embedded visual derivative, and Book/rename evidence is derived. None is represented as a complete export, original UI screenshot, or internal trace.
 
 ## What the controlled specimen changes
 

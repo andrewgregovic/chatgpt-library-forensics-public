@@ -12,8 +12,9 @@
 - The 133-byte ZIP's current bytes are verified, but its original browser-download status is first-party attestation without browser history, Finder metadata, acquisition image, or extended attributes.
 - The uploaded comparison bytes and original hash receipt are not separately preserved.
 - Generated and uploaded object IDs, exact chronology, picker screenshots, and rename receipts are unavailable.
-- No original direct transcript, screenshot, exported HTML, or browser export was located for the proposed 13 July 01:34 image-reconstruction admission or 06:50 Library search miss. Those events remain blocked in the article-evidence gate.
-- The article-specific false Chapter 13 receipt and Book Package A Library/picker comparison are not yet available as publication-safe primary exhibits.
+- The 13 July image-reconstruction admission and 06:50 Library miss are operator-supplied recovered transcript extracts; no original screenshot, complete conversation export, exported HTML, browser archive, or hidden tool trace is published. A nearby timestamp discrepancy for the Library message remains unresolved.
+- The false Chapter 13 receipt is a deterministic crop of a recovered PDF-embedded visual, not the original standalone screenshot or a full chat export.
+- Book Package A and rename/reupload are publication-safe derived account records without direct UI exhibits, object IDs, or independently auditable article-specific display details.
 
 ## Mechanism limits
 

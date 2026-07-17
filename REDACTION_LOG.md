@@ -41,6 +41,20 @@ Original screenshot files are withheld. Public derivatives use only deterministi
 
 Both derivatives were visually inspected after generation. No source original was placed in the public worktree.
 
-## Timeline-exhibit decision
+## false_chapter_receipt_redacted.png
 
-No new timeline screenshot derivative or transcript was created in this release. The proposed 13 July image-reconstruction and Library-search exhibits lack an original direct source in the recovered material. No visual was generated, reconstructed, or inferred from the article draft; consequently there are no new withheld-original hashes to record.
+| Field | Value |
+|---|---|
+| Source original | Recovered PDF-embedded `VIS-002_progress_retrieval_admission_embedded.png` |
+| Original size | 162,078 bytes |
+| Original SHA-256 | a1ec21af4106af95b7cad671f0bbec698b96c596088357e6f5e1e59cf85e9826 |
+| Public derivative | evidence/progress/false_chapter_receipt_redacted.png |
+| Public size | 164,337 bytes |
+| Public SHA-256 | 1665c166e7b02a74b72a86921a4fb668539a6a21a1a36800252ea1f2f4b5f86e |
+| Pixel dimensions | 1334 × 1036 |
+| Crop | Retained source rectangle x=0..1333, y=44..1079; this omits only a partial fragment above the visible progress statement. |
+| Redaction | None. No text, pixels, or meaning were reconstructed, replaced, enhanced, or generated. |
+| Metadata treatment | Converted to RGB PNG and saved as a new deterministic derivative. |
+| Source ceiling | The source is a recovered PDF-embedded visual, not the original standalone chat screenshot or complete conversation export. |
+
+The new timeline exhibits are text extracts, not images. They are labeled as operator-supplied recovered platform-record extracts because no original screenshot or complete export was available. No timeline visual was generated or reconstructed.

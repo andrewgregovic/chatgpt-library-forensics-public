@@ -1,0 +1,7 @@
+HTTP status: 200
+content-type: text/html; charset=utf-8
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+date: Fri, 17 Jul 2026 01:13:11 GMT
+server: Vercel
+x-vercel-cache: MISS
+x-matched-path: /[slug]/incidents/[id]

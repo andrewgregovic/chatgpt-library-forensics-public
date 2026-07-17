@@ -82,8 +82,11 @@ def validate_gate_pointers() -> int:
         if pointer.is_absolute() or ".." in pointer.parts or not (ROOT / pointer).is_file():
             fail(f"unresolved PASS pointer {match.group(1)!r}")
             failures += 1
-    if "The article is **not publication-ready**" not in text:
-        fail("article gate does not block promotion with unresolved critical exhibits")
+    if "The article is **ready for promotion review with provenance ceilings**" not in text:
+        fail("article gate does not state the required promotion-review disposition")
+        failures += 1
+    if "| BLOCKED |" in text:
+        fail("article gate retains a blocked row after the authorized provenance-limited publication")
         failures += 1
     return failures
 
@@ -102,8 +105,8 @@ def validate_publication_manifest() -> int:
 
 def validate_clock_conversion() -> int:
     pairs = (
-        ("2026-07-13T09:11:53Z", "2026-07-13 17:11:53 SGT"),
-        ("2026-07-13T14:35:47Z", "2026-07-13 22:35:47 SGT"),
+        ("2026-07-13T09:11:53.323Z", "2026-07-13 17:11:53 SGT"),
+        ("2026-07-13T14:35:47.689Z", "2026-07-13 22:35:47 SGT"),
     )
     timeline = (ROOT / "TIMELINE.md").read_text(encoding="utf-8")
     failures = 0
