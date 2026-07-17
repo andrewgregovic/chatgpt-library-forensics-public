@@ -38,12 +38,12 @@ The evidence supports divergence between these states. It does not demonstrate a
 - KNOWN_LIMITATIONS.md — what remains unproven.
 - evidence/ — the controlled specimen, redacted screenshots, public-record metadata, and tables.
 - analysis/ — claims, contradictions, hypothesis statuses, ZIP findings, and state model.
-- appendices/OTHER_REPORTED_ANOMALIES_MARCH_JULY_2026.md — a lower-confidence contextual record of separately reported and observed anomalies. It is not evidence for a common cause and does not alter the controlled generated-ZIP finding.
+- appendices/OTHER_REPORTED_ANOMALIES_MARCH_JULY_2026.md — provenance-only directory for directly observed and gathered-online anomaly records. It does not alter the controlled generated-ZIP finding.
 - scripts/ — dependency-free Python validators.
 
 ## Other reported anomalies
 
-[Other reported and observed anomalies, March–July 2026](appendices/OTHER_REPORTED_ANOMALIES_MARCH_JULY_2026.md) is a compact contextual appendix. Its author observations have retained local-evidence ceilings, and every other-user report is anecdotal; it is lower-confidence than the controlled generated-ZIP evidence and makes no common-cause claim. The accompanying [CSV index](appendices/OTHER_REPORTED_ANOMALIES_INDEX.csv) and [snapshot ledger](evidence/public-records/OTHER_ANOMALIES_SNAPSHOT_LEDGER.csv) identify source status and external-only captures.
+[Other reported and observed anomalies, March–July 2026](appendices/OTHER_REPORTED_ANOMALIES_MARCH_JULY_2026.md) is a provenance-only directory. [Directly observed records](appendices/anomalies/directly-observed/) and [gathered-online records](appendices/anomalies/gathered-online/) retain their existing evidence grades, source references, independence groups, and provenance ceilings.
 
 ## Important limits
 

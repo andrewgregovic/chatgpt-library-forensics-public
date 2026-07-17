@@ -12,6 +12,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 GATE = ROOT / "ARTICLE_EVIDENCE_GATE_A_FILENAME_IS_NOT_A_FILE_v0.5.md"
+ANOMALY_APPENDIX = ROOT / "appendices" / "OTHER_REPORTED_ANOMALIES_MARCH_JULY_2026.md"
+DIRECT_ANOMALIES = ROOT / "appendices" / "anomalies" / "directly-observed"
+ONLINE_ANOMALIES = ROOT / "appendices" / "anomalies" / "gathered-online"
 FORBIDDEN_TEXT = (
     "/Users" + "/agre",
     "file" + "://",
@@ -123,12 +126,78 @@ def validate_clock_conversion() -> int:
     return failures
 
 
+def read_index(path: Path) -> list[dict[str, str]]:
+    with path.open(newline="", encoding="utf-8") as handle:
+        return list(csv.DictReader(handle))
+
+
+def validate_anomaly_provenance_split() -> int:
+    failures = 0
+    required = (
+        DIRECT_ANOMALIES / "README.md",
+        DIRECT_ANOMALIES / "OTHER_REPORTED_ANOMALIES_MARCH_JULY_2026.md",
+        DIRECT_ANOMALIES / "OTHER_REPORTED_ANOMALIES_INDEX.csv",
+        ONLINE_ANOMALIES / "README.md",
+        ONLINE_ANOMALIES / "OTHER_REPORTED_ANOMALIES_MARCH_JULY_2026.md",
+        ONLINE_ANOMALIES / "OTHER_REPORTED_ANOMALIES_INDEX.csv",
+        ONLINE_ANOMALIES / "OTHER_ANOMALIES_SNAPSHOT_LEDGER.csv",
+    )
+    for path in required:
+        if not path.is_file():
+            fail(f"missing anomaly provenance file {path.relative_to(ROOT)}")
+            failures += 1
+    if failures:
+        return failures
+
+    direct_opening = (
+        "These records concern anomalies directly observed in Andrew Gregovic’s own "
+        "ChatGPT account and workflows. They vary in evidentiary strength and do not "
+        "establish a common cause."
+    )
+    online_opening = (
+        "These records were gathered from public online sources. Most are anecdotal "
+        "and are preserved as reports of similar or neighbouring symptoms, not as proof "
+        "of prevalence or common cause."
+    )
+    if direct_opening not in (DIRECT_ANOMALIES / "README.md").read_text(encoding="utf-8"):
+        fail("directly-observed README opening text mismatch")
+        failures += 1
+    if online_opening not in (ONLINE_ANOMALIES / "README.md").read_text(encoding="utf-8"):
+        fail("gathered-online README opening text mismatch")
+        failures += 1
+
+    direct_rows = read_index(DIRECT_ANOMALIES / "OTHER_REPORTED_ANOMALIES_INDEX.csv")
+    online_rows = read_index(ONLINE_ANOMALIES / "OTHER_REPORTED_ANOMALIES_INDEX.csv")
+    direct_ids = {row["item_id"] for row in direct_rows}
+    online_ids = {row["item_id"] for row in online_rows}
+    if not direct_rows or any(not item_id.startswith("AAR-") for item_id in direct_ids):
+        fail("directly-observed index contains a non-AAR record or no records")
+        failures += 1
+    if not online_rows or any(not item_id.startswith("PAR-") for item_id in online_ids):
+        fail("gathered-online index contains a non-PAR record or no records")
+        failures += 1
+    if direct_ids & online_ids:
+        fail("anomaly provenance indexes duplicate record IDs")
+        failures += 1
+
+    appendix = ANOMALY_APPENDIX.read_text(encoding="utf-8")
+    if appendix.count("## ") != 2 or "|" in appendix:
+        fail("main anomaly appendix must contain only the two provenance links")
+        failures += 1
+    for link in ("anomalies/directly-observed/", "anomalies/gathered-online/"):
+        if link not in appendix:
+            fail(f"main anomaly appendix missing provenance link {link}")
+            failures += 1
+    return failures
+
+
 def main() -> int:
     failures = validate_no_symlinks()
     failures += validate_text_safety()
     failures += validate_gate_pointers()
     failures += validate_publication_manifest()
     failures += validate_clock_conversion()
+    failures += validate_anomaly_provenance_split()
     if failures:
         return 1
     print("PASS publication safety, evidence-gate pointers, and UTC-to-SGT conversions")
