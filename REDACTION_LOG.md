@@ -40,3 +40,7 @@ Original screenshot files are withheld. Public derivatives use only deterministi
 ## Review result
 
 Both derivatives were visually inspected after generation. No source original was placed in the public worktree.
+
+## Timeline-exhibit decision
+
+No new timeline screenshot derivative or transcript was created in this release. The proposed 13 July image-reconstruction and Library-search exhibits lack an original direct source in the recovered material. No visual was generated, reconstructed, or inferred from the article draft; consequently there are no new withheld-original hashes to record.

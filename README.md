@@ -2,7 +2,7 @@
 
 Generated-ZIP downstream reuse failure was repeatedly observed for one ChatGPT account between 10 and 16 July 2026 through the recorded Library, picker and assistant-side routes. This repository preserves the evidence used to reach that scoped conclusion. It does not establish prevalence across users or identify OpenAI’s internal mechanism.
 
-This is a curated public export from a larger private evidence vault. It contains the minimum material needed to audit the published findings: one byte-verified controlled ZIP, redacted documentary screenshots, concise public-record metadata, evidence tables, contradiction records, and deterministic validators. It is not a mirror of the private research workspace.
+This is a curated public export from a larger private evidence vault. It contains the publication-safe material available to inspect the findings, their derivation and their stated limitations: one byte-verified controlled ZIP, redacted documentary screenshots, concise public-record metadata, evidence tables, contradiction records, and deterministic validators. It is not a mirror of the private research workspace.
 
 ## Core result
 
@@ -34,6 +34,7 @@ The evidence supports divergence between these states. It does not demonstrate a
 - EXECUTIVE_SUMMARY.md — concise results and evidentiary ceilings.
 - METHODOLOGY.md — source, provenance, and validation rules.
 - TIMELINE.md — incident and evidence chronology.
+- ARTICLE_EVIDENCE_GATE_A_FILENAME_IS_NOT_A_FILE_v0.5.md — article-specific pointer and publication-readiness gate.
 - KNOWN_LIMITATIONS.md — what remains unproven.
 - evidence/ — the controlled specimen, redacted screenshots, public-record metadata, and tables.
 - analysis/ — claims, contradictions, hypothesis statuses, ZIP findings, and state model.
@@ -49,7 +50,7 @@ The evidence supports divergence between these states. It does not demonstrate a
 - “0/11” means eleven submitted recorded targets, not a measured population rate.
 - The eleven rows comprise two direct picker comparisons and nine assistant-side resolution audits; the two direct comparisons recorded uploaded controls passing.
 - The 31-row historical inventory is a retrospective first-party cohort, not 31 independent test conditions.
-- The controlled ZIP excludes simple size, archive-structure, payload, and current-byte-corruption explanations for that specimen. It does not expose an internal mechanism.
+- The controlled ZIP excludes simple size, archive-structure, payload difference, and current-byte-corruption explanations for that specimen. It does not expose an internal mechanism.
 - Rename-and-reupload created an operational replacement object in the recorded specimens; it did not prove repair of the original object.
 - A visible Gmail reconnect surface is not evidence that Gmail was searched, read, drafted, or invoked.
 - A route failure does not establish that a Library-visible object lacked bytes through every possible route.
@@ -60,8 +61,9 @@ Run from the repository root:
 
     python3 scripts/verify_hashes.py
     python3 scripts/validate_controlled_specimens.py
+    python3 scripts/validate_publication_safety.py
 
-Both scripts use only the Python standard library and exit non-zero on a missing file, unexpected file, hash mismatch, archive mismatch, or controlled-payload mismatch.
+All three scripts use only the Python standard library and exit non-zero on an integrity, safety, pointer, or controlled-payload mismatch.
 
 ## Licence and third-party material
 

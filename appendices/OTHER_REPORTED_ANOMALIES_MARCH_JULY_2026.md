@@ -1,6 +1,6 @@
 # Other reported and observed anomalies, March–July 2026
 
-> This appendix records other file, Library, retrieval, rendering, identity, connector and execution anomalies observed by the author or reported publicly during the preceding months. Most are incomplete, sporadic or weakly instrumented. They are included because the surrounding smoke is relevant; they do not establish that the incidents share one cause, nor that every report is accurate.
+> This appendix records other file, Library, retrieval, rendering, identity, connector and execution anomalies observed by the author or reported publicly during the preceding months. Most are incomplete, sporadic or weakly instrumented. These records preserve the wider observation field and its limits; they do not establish that the incidents share one cause, nor that every report is accurate.
 
 This is contextual material, not an extension of the controlled generated-ZIP conclusion. **Grade A** is a first-party public record; **Grade B** is a directly preserved or byte-verified local record with the stated ceiling; **Grade C** is an author observation preserved only in a limited record; and **Grade D** is a reviewed public user report. Public reports are anecdotal unless a row says otherwise. `External-only snapshot` means a dated private capture exists but is not republished here to avoid unnecessary replication of user content; see [the snapshot ledger](../evidence/public-records/OTHER_ANOMALIES_SNAPSHOT_LEDGER.csv).
 
@@ -63,4 +63,4 @@ Microsoft VS Code issue 323945 is excluded as support for artifact-progress beha
 
 ## Conclusion
 
-These reports do not prove one defect or one architecture. They show that the generated-ZIP finding did not arise in an otherwise quiet product environment. During the same period, users and OpenAI’s own status records described failures across several neighbouring file and execution surfaces. The main report rests on its controlled evidence; this appendix records the surrounding smoke.
+These records do not prove one defect or one architecture. They are not aggregated as evidence of prevalence, severity or a common cause. During the same period, users and OpenAI’s own status records described failures across several neighbouring file and execution surfaces. The main report rests on its controlled evidence; this appendix preserves the wider observation field and its limits.

@@ -12,6 +12,8 @@
 - The 133-byte ZIP's current bytes are verified, but its original browser-download status is first-party attestation without browser history, Finder metadata, acquisition image, or extended attributes.
 - The uploaded comparison bytes and original hash receipt are not separately preserved.
 - Generated and uploaded object IDs, exact chronology, picker screenshots, and rename receipts are unavailable.
+- No original direct transcript, screenshot, exported HTML, or browser export was located for the proposed 13 July 01:34 image-reconstruction admission or 06:50 Library search miss. Those events remain blocked in the article-evidence gate.
+- The article-specific false Chapter 13 receipt and Book Package A Library/picker comparison are not yet available as publication-safe primary exhibits.
 
 ## Mechanism limits
 
@@ -27,3 +29,5 @@ The evidence does not establish:
 ## Public-record limits
 
 Status pages and product documentation establish published statements and current documented behavior. They do not supply private root-cause information, complete account coverage, or a guarantee that every reported workflow was available on every date, plan, or surface.
+
+The 13 July status record establishes its own public acknowledgement and resolution timestamps. It does not establish when OpenAI internally detected an incident, knew of a particular account, or whether an unlocated earlier account event shared its cause.
